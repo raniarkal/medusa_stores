@@ -8,14 +8,14 @@ import CollectionTemplate from "@modules/collections/templates"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
 
 type Props = {
-  params: Promise<{ handle: string; countryCode: string }>
+  params: Promise<{ handle: string; countryCode: any }>
   searchParams: Promise<{
     page?: string
     sortBy?: SortOptions
   }>
 }
 
-export const PRODUCT_LIMIT = 12
+export const PRODUCT_LIMIT:any = 12
 
 export async function generateStaticParams() {
   const { collections } = await listCollections({

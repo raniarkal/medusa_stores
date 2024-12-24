@@ -8,7 +8,7 @@ import CategoryTemplate from "@modules/categories/templates"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
 
 type Props = {
-  params: Promise<{ category: string[]; countryCode: string }>
+  params: Promise<{ category: string[]; countryCode: any }>
   searchParams: Promise<{
     sortBy?: SortOptions
     page?: string

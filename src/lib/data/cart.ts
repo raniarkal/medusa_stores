@@ -109,7 +109,7 @@ export async function addToCart({
 }: {
   variantId: string
   quantity: number
-  countryCode: string
+  countryCode: any
 }) {
   if (!variantId) {
     throw new Error("Missing variant ID when adding to cart")
@@ -400,7 +400,7 @@ export async function placeOrder() {
  * @param regionId
  * @param countryCode
  */
-export async function updateRegion(countryCode: string, currentPath: string) {
+export async function updateRegion(countryCode: any, currentPath: string) {
   const cartId = await getCartId()
   const region = await getRegion(countryCode)
 

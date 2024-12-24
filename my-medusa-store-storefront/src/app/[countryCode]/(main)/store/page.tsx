@@ -14,7 +14,7 @@ type Params = {
     page?: string
   }>
   params: Promise<{
-    countryCode: string
+    countryCode: any
   }>
 }
 

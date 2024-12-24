@@ -15,7 +15,7 @@ export const listProducts = async ({
 }: {
   pageParam?: number
   queryParams?: HttpTypes.FindParams & HttpTypes.StoreProductParams
-  countryCode?: string
+  countryCode?: any
   regionId?: string
 }): Promise<{
   response: { products: HttpTypes.StoreProduct[]; count: number }
@@ -98,7 +98,7 @@ export const listProductsWithSort = async ({
   page?: number
   queryParams?: HttpTypes.FindParams & HttpTypes.StoreProductParams
   sortBy?: SortOptions
-  countryCode: string
+  countryCode: any
 }): Promise<{
   response: { products: HttpTypes.StoreProduct[]; count: number }
   nextPage: number | null

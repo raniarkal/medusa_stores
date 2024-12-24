@@ -5,7 +5,7 @@ import Product from "../product-preview"
 
 type RelatedProductsProps = {
   product: HttpTypes.StoreProduct
-  countryCode: string
+  countryCode: any
 }
 
 export default async function RelatedProducts({

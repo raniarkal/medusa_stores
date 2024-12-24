@@ -39,7 +39,7 @@ export async function generateStaticParams() {
   )
 
   const staticParams = countryCodes
-    ?.map((countryCode: string) =>
+    ?.map((countryCode: any) =>
       collectionHandles.map((handle: string | undefined) => ({
         countryCode,
         handle,

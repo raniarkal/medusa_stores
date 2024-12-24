@@ -14,7 +14,7 @@ import { HttpTypes } from "@medusajs/types"
 type ProductTemplateProps = {
   product: HttpTypes.StoreProduct
   region: HttpTypes.StoreRegion
-  countryCode: string
+  countryCode: any
 }
 
 const ProductTemplate: React.FC<ProductTemplateProps> = ({

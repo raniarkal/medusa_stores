@@ -122,7 +122,7 @@ export async function login(_currentState: unknown, formData: FormData) {
   }
 }
 
-export async function signout(countryCode: string) {
+export async function signout(countryCode: any) {
   await sdk.auth.logout()
   removeAuthToken()
   revalidateTag("auth")

@@ -180,7 +180,7 @@ const AccountNavLink = ({
   children,
   "data-testid": dataTestId,
 }: AccountNavLinkProps) => {
-  const { countryCode }: { countryCode: string } = useParams()
+  const { countryCode }: { countryCode: any } = useParams()
 
   const active = route.split(countryCode)[1] === href
   return (

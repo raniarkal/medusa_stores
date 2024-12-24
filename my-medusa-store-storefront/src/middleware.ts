@@ -72,7 +72,7 @@ async function getCountryCode(
   regionMap: Map<string, HttpTypes.StoreRegion | number>
 ) {
   try {
-    let countryCode
+    let countryCode:any
 
     const vercelCountryCode = request.headers
       .get("x-vercel-ip-country")
